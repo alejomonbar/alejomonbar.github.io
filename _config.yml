@@ -31,9 +31,9 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 repo_theme_light: shadow_blue       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: tokyonight           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
-  theme_light: flat    # https://github.com/ryo-ma/github-profile-trophy
-  theme_dark: gitdimmed  # https://github.com/ryo-ma/github-profile-trophy
+  enabled: false
+  theme_light: oldie    # https://github.com/ryo-ma/github-profile-trophy
+  theme_dark: nord  # https://github.com/ryo-ma/github-profile-trophy
 
 # -----------------------------------------------------------------------------
 # RSS Feed
@@ -68,7 +68,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # -----------------------------------------------------------------------------
 
 github_username: alejomonbar # your GitHub user name
-gitlab_username: # your GitLab user name
+gitlab_username: j.montanez-barrera # your GitLab user name
 x_username: alejomonbar # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: alejandromontanez # your LinkedIn user name
@@ -82,10 +82,10 @@ quora_username: # your Quora username
 publons_id: # your ID on Publons
 lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 osf_id: # your OSF ID
-research_gate_profile: # your profile on ResearchGate
+research_gate_profile: Alejandro-Montanez-Barrera # your profile on ResearchGate
 scopus_id: # your profile on Scopus
 blogger_url: # your blogger URL
-work_url: # work page URL
+work_url: https://www.fz-juelich.de/profile/montanez-barrera_j # work page URL
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
@@ -98,8 +98,8 @@ pinterest_id: # your pinterest id
 unsplash_id: # your unsplash id
 instagram_id: # your instagram id
 facebook_id: # your facebook id
-youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
-discord_id: # your discord id (18-digit unique numerical identifier)
+youtube_id: AlejandroMontanezB # your youtube channel id (youtube.com/@<youtube_id>)
+discord_id: alejomonbar#5279 # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
