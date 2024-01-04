@@ -79,7 +79,7 @@
       "summary": "Quantum Counselor for Portfolio Investment: The Quantum Counselor for portfolio investment is a tool with two main objectives: forecasting the trend of assets price and optimizing portfolio returns both using quantum computing techniques."
     }
   ],
-  
+
   "publications": [
     {
       "name": "Zur Elektrody/namik bewegter Körper",
@@ -115,7 +115,7 @@
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Spanish",
       "fluency": "Native speaker"
       "icon":""
     },
@@ -127,10 +127,10 @@
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Quantum Computing",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics","Quantum Computing","Quantum Information","Quantum Cryptography","Quantum Communication","Quantum Teleportation"
+        "Quantum Computing","Quantum Information","Quantum Hardware","Benchmarking","Quantum systems simulation"
       ]
     }
   ],
