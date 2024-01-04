@@ -32,24 +32,24 @@
       description:
         - Solving combinatorial Optimization using digital and analog quantum techniques.
         - Simulation of large quantum circuits (43 qubits) using HPC systems.
-        - Benchmarking quantum devices among them neutral atoms, superconductive, and ion trapped quantum devices.
+        - Benchmarking quantum devices among them neutral atoms, superconductive, and trapped-ion quantum devices.
         - Characterization of large quantum systems using classical shadows.
 
         - title: Achivements.
           contents:
-            - Unbalanced penalization technique. It allows a better enconding of combinatorial optimization problems with inequality constraints, improving exponenitally the probability of finding good solutions for these problems.
-            - Transfer learing in the quantum approximate optimization algorithm (QAOA). This methodology reduce the 
+            - Unbalanced penalization technique. It allows a better encoding of combinatorial optimization problems with inequality constraints, improving exponentially the probability of finding good solutions for these problems.
+            - Transfer learning in the quantum approximate optimization algorithm (QAOA). This methodology reduces the 
     - title: Combinatorial optimization problems OpenQAOA SDK mantainer
       institution: Unitary Fund
       year: 2023
       description:
-        - Microgrant winner
+        - Develop the optimization problems structure of openQAOA a python-based library from Entropica Labs.
 
     - title: Mentorship in Quantum Computing
       institution: IBM
       year: 2021-2022
       description:
-        - Adding functionalities to the BasicAer backend | Mentor:KevinSung.
+        - Adding functionalities to the BasicAer backend | Mentor:Kevin Sung.
         - Adding applications to the Qiskit Optimization library and bench- marking codes of these applications | Mentor:Takashi Imamichi.
 
 
@@ -61,29 +61,36 @@
       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
-  type: time_table
+  type: Summa cum laude
   contents:
-    - year: 1921
+    - year: 2022
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
+        - PhD 
+    - year: 2022
       items: 
-        - Max Planck Medal
+        - QHack winner. Financial, QAOA, and Entrepreneur challenges. 
+        - Project | Quantum Counselor for Portfolio Investment. The Quantum Counselor for portfolio investment is a tool with two main objectives. Forecasting the trend of assets price and optimizing portfolio returns both using quantum computing techniques.
+    - year: 2023
+      items: 
+        - QHack winner. Quantum Computing Today and Amazon Braket challenges.
+        - Project | Enhancing Portfolio Optimization Solutions. Wisely Encoding Constrained Combinatorial Optimization Problems on Quantum Devices
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Quantum Computing
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Simulation
+        - Benchmarking
+        - Applications in Optimization
+    - title: Thermodynamics
       items:
-        - Description 1.
-        - Description 2.
+        - ANN for properties prediction
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Marathon running
+    - Soccer
+    - Chess
+    - Cycling

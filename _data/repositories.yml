@@ -1,12 +1,10 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - alejomonbar
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - alejomonbar/Quantum-Powered-Planner-For-EV-Charging-Networks
+  - alejomonbar/clever-portfolio-optimization-encoding
+  - alejomonbar/Quantum-Counselor-for-Portfolio-Investment
+  - alejomonbar/Quantum-Supply-Chain-Manager
+  - alejomonbar/Generating-randomly-perturbed-density-operators
+  - entropicalabs/openqaoa
