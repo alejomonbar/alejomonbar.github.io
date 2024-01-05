@@ -35,10 +35,10 @@
         - Benchmarking quantum devices among them neutral atoms, superconductive, and trapped-ion quantum devices.
         - Characterization of large quantum systems using classical shadows.
 
-        - title: Achivements.
+        - title: Achievements.
           contents:
-            - Unbalanced penalization technique. It allows a better encoding of combinatorial optimization problems with inequality constraints, improving exponentially the probability of finding good solutions for these problems.
-            - Transfer learning in the quantum approximate optimization algorithm (QAOA). This methodology reduces the 
+            - Unbalanced penalization technique. It allows a better encoding of combinatorial optimization problems with inequality constraints, improving the probability of finding good solutions for these problems.
+            - Transfer learning in the quantum approximate optimization algorithm (QAOA). This methodology reduces considerably the need for classical optimization.
     - title: Combinatorial optimization problems OpenQAOA SDK mantainer
       institution: Unitary Fund
       year: 2023

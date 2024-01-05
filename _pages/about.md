@@ -9,9 +9,11 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p> Gebäude 16.4 / Raum 308a </p>
-    <p>Wilhelm-Johnen-Straße, 52428 Jülich</p>
-    <p>Forschungszentrum Jülich GmbH </p>
+    <p> Gebäude 16.4 </p>
+    <p> Raum 308a </p>
+    <p> Wilhelm-Johnen-Straße</p>
+    <p> 52428 Jülich </p>
+    <p>Forschungszentrum Jülich</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
