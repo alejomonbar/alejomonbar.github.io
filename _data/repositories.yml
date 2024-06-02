@@ -2,6 +2,7 @@ github_users:
   - alejomonbar
 
 github_repos:
+  - alejomonbar/LR-QAOA
   - alejomonbar/Quantum-Powered-Planner-For-EV-Charging-Networks
   - alejomonbar/clever-portfolio-optimization-encoding
   - alejomonbar/Quantum-Counselor-for-Portfolio-Investment
