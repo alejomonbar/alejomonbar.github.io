@@ -3,6 +3,35 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{Montanez-Barrera2024,
+abstract = {The quantum approximate optimization algorithm (QAOA) is a promising algorithm for solving combinatorial optimization problems (COPs). In this algorithm, there are alternating layers consisting of a mixer and a problem Hamiltonian. Each layer $i=0,\ldots,p-1$ is parameterized by $\beta_i$ and $\gamma_i$. How to find these parameters has been an open question with the majority of the research focused on finding them using classical algorithms. In this work, we present evidence that fixed linear ramp schedules constitute a universal set of QAOA parameters, i.e., a set of $\gamma$ and $\beta$ parameters that rapidly approximate the optimal solution, $x^*$, independently of the COP selected, and that the success probability of finding it, $probability(x^*)$, increases with the number of QAOA layers $p$. We simulate linear ramp QAOA protocols (LR-QAOA) involving up to $N_q=42$ qubits and $p = 400$ layers on random instances of 9 different COPs. The results suggest that $probability(x^*) \approx 1/2^{(\eta N_q / p)}$ for a constant $\eta$. For example, when implementing LR-QAOA with $p=42$, the $probability(x^*)$ for 42-qubit Weighted MaxCut problems (W-MaxCut) increases from $2/2^{42}\approx 10^{-13}$ to an average of 0.13. We compare LR-QAOA, simulated annealing (SA), and branch-and-bound (B\&B) finding a fundamental improvement in LR-QAOA. We test LR-QAOA on real hardware using IonQ Aria, Quantinuum H2-1, IBM Brisbane, IBM Kyoto, and IBM Osaka, encoding random weighted MaxCut (W-MaxCut) problems from 5 to 109 qubits and $p=3$ to $100$. Even for the largest case, $N_q=109$ qubits and $p=100$, information about the LR-QAOA optimization protocol is present. The circuit involved requires 21200 CNOT gates. These results show that LR-QAOA effectively finds high-quality solutions for COPs and suggests an advantage of quantum computation for combinatorial optimization in the near future.},
+archivePrefix = {arXiv},
+arxivId = {2405.09169},
+author = {Montanez-Barrera, J. A. and Michielsen, Kristel},
+eprint = {2405.09169},
+file = {:Users/alejomonbar/Library/CloudStorage/Dropbox/Art{\'{i}}culos/Towards_a_universal_QAOA_protocol.pdf:pdf},
+keywords = {bin,combinatorial optimization,knapsack,lr-qaoa,max-3-sat,maximal independent set,packing,portfolio optimization,qaoa,traveling salesman,weighted maxcut},
+pages = {1--17},
+title = {{Towards a universal QAOA protocol: Evidence of quantum advantage in solving combinatorial optimization problems}},
+url = {http://arxiv.org/abs/2405.09169},
+year = {2024}
+}
+
+@article{Montanez-Barrera2024,
+abstract = {Solving combinatorial optimization problems (COPs) is a promising application of quantum computation, with the Quantum Approximate Optimization Algorithm (QAOA) being one of the most studied quantum algorithms for solving them. However, multiple factors make the parameter search of the QAOA a hard optimization problem. In this work, we study transfer learning (TL), a methodology to reuse pre-trained QAOA parameters of one problem instance into different COP instances. To this end, we select small cases of the traveling salesman problem (TSP), the bin packing problem (BPP), the knapsack problem (KP), the weighted maximum cut (MaxCut) problem, the maximal independent set (MIS) problem, and portfolio optimization (PO), and find optimal $\beta$ and $\gamma$ parameters for $p$ layers. We compare how well the parameters found for one problem adapt to the others. Among the different problems, BPP is the one that produces the best transferable parameters, maintaining the probability of finding the optimal solution above a quadratic speedup for problem sizes up to 42 qubits and p = 10 layers. Using the BPP parameters, we perform experiments on IonQ Harmony and Aria, Rigetti Aspen-M-3, and IBM Brisbane of MIS instances for up to 18 qubits. The results indicate IonQ Aria yields the best overlap with the ideal probability distribution. Additionally, we show that cross-platform TL is possible using the D-Wave Advantage quantum annealer with the parameters found for BPP. We show an improvement in performance compared to the default protocols for MIS with up to 170 qubits. Our results suggest that there are QAOA parameters that generalize well for different COPs and annealing protocols.},
+archivePrefix = {arXiv},
+arxivId = {2402.05549},
+author = {Montanez-Barrera, J. A. and Willsch, Dennis and Michielsen, Kristel},
+eprint = {2402.05549},
+file = {:Users/alejomonbar/Library/CloudStorage/Dropbox/Art{\'{i}}culos/Transfer_Learning.pdf:pdf},
+keywords = {bin packing,combinatorial optimization,knapsack,maxcut,mis,portfolio optimization,qaoa,quan-,qubo,transfer learning,tsp,tum optimization},
+pages = {1--11},
+title = {{Transfer learning of optimal QAOA parameters in combinatorial optimization}},
+url = {http://arxiv.org/abs/2402.05549},
+year = {2024}
+}
+
+
 @article{Montanez-Barrera2023,
 abstract = {Combinatorial optimization problems are one of the target applications of current quantum technology, mainly because of their industrial relevance, the difficulty of solving large instances of them classically, and their equivalence to Ising Hamiltonians using the quadratic unconstrained binary optimization (QUBO) formulation. Many of these applications have inequality constraints, usually encoded as penalization terms in the QUBO formulation using additional variables known as slack variables. The slack variables have two disadvantages: (i) these variables extend the search space of optimal and suboptimal solutions, and (ii) the variables add extra qubits and connections to the quantum algorithm. Recently, a new method known as unbalanced penalization has been presented to avoid using slack variables. This method offers a trade-off between additional slack variables to ensure that the optimal solution is given by the ground state of the Ising Hamiltonian, and using an unbalanced heuristic function to penalize the region where the inequality constraint is violated with the only certainty that the optimal solution will be in the vicinity of the ground state. This work tests the unbalanced penalization method using real quantum hardware on D-Wave Advantage for the traveling salesman problem (TSP). The results show that the unbalanced penalization method outperforms the solutions found using slack variables and sets a new record for the largest TSP solved with quantum technology.},
 archivePrefix = {arXiv},
@@ -36,6 +65,19 @@ year = {2022},
 preview={unbalanced.png},
 selected={true}
 }
+
+@article{Montanez-Barrera2022,
+abstract = {Solving combinatorial optimization problems of the kind that can be codified by quadratic unconstrained binary optimization (QUBO) is a promising application of quantum computation. Some problems of this class suitable for practical applications such as the traveling salesman problem (TSP), the bin packing problem (BPP), or the knapsack problem (KP) have inequality constraints that require a particular cost function encoding. The common approach is the use of slack variables to represent the inequality constraints in the cost function. However, the use of slack variables considerably increases the number of qubits and operations required to solve these problems using quantum devices. In this work, we present an alternative method that does not require extra slack variables and consists of using an unbalanced penalization function to represent the inequality constraints in the QUBO. This function is characterized by larger penalization when the inequality constraint is not achieved than when it is. We evaluate our approach on the TSP, BPP, and KP, successfully encoding the optimal solution of the original optimization problem near the ground state cost Hamiltonian. Additionally, we employ D-Wave Advantage and D-Wave hybrid solvers to solve the BPP, surpassing the performance of the slack variables approach by achieving solutions for up to 29 items, whereas the slack variables approach only handles up to 11 items. This new approach can be used to solve combinatorial problems with inequality constraints with a reduced number of resources compared to the slack variables approach using quantum annealing or variational quantum algorithms.},
+archivePrefix = {arXiv},
+arxivId = {2211.13914},
+author = {Montanez-Barrera, Alejandro and Willsch, Dennis and Maldonado-Romo, Alberto and Michielsen, Kristel},
+eprint = {2211.13914},
+journal = {Quantum Science and Technology},
+title = {{Unbalanced penalization: A new approach to encode inequality constraints of combinatorial problems for quantum optimization algorithms}},
+url = {http://arxiv.org/abs/2211.13914},
+year = {2022}
+}
+
 
 @book{Montanez-Barrera2022,
 abstract = {This paper presents a general method for producing randomly perturbed density operators subject to different sets of constraints. The perturbed density operators are a specified “distance" away from the state described by the original density operator. This approach is applied to a bipartite system of qubits and used to examine the sensitivity of various entanglement measures on the perturbation magnitude. The constraint sets used include constant energy, constant entropy, and both constant energy and entropy. The method is then applied to produce perturbed random quantum states that correspond with those obtained experimentally for Bell states on the IBM quantum device ibmq_manila. The results show that the methodology can be used to simulate the outcome of real quantum devices where noise, which is important both in theory and simulation, is present.},
