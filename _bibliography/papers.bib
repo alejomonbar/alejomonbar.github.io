@@ -3,6 +3,80 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{Montanez-Barrera2025-LR-QAOA,
+abstract = {The Quantum Approximate Optimization Algorithm (QAOA) is a promising algorithm for solving combinatorial optimization problems (COPs), with performance governed by variational parameters. While most prior work has focused on classically optimizing these parameters, we demonstrate that fixed linear ramp schedules, linear ramp QAOA (LR-QAOA), can efficiently approximate optimal solutions independently of the COP selected. We simulate LR-QAOA involving up to 42 qubits and 400 layers on random instances of 9 different COPs, and test on real hardware using IonQ Aria, Quantinuum H2-1, IBM Brisbane, IBM Kyoto, and IBM Osaka with up to 109 qubits and 100 layers. These results show evidence of scaling advantages in quantum optimization.},
+archivePrefix = {arXiv},
+arxivId = {2405.09169},
+author = {Montanez-Barrera, J. A. and Michielsen, Kristel},
+eprint = {2405.09169},
+journal = {npj Quantum Information},
+title = {{Towards a Linear-Ramp QAOA protocol: Evidence of a scaling advantage in solving some combinatorial optimization problems}},
+url = {https://doi.org/10.1038/s41534-025-01082-1},
+doi = {10.1038/s41534-025-01082-1},
+volume = {11},
+pages = {131},
+year = {2025},
+keywords = {lr-qaoa,qaoa,combinatorial optimization,quantum advantage},
+selected={true}
+}
+
+@article{Montanez-Barrera2025-Transfer,
+abstract = {Solving combinatorial optimization problems (COPs) is a promising application of quantum computation, with QAOA being one of the most studied quantum algorithms. We study transfer learning (TL), a methodology to reuse pre-trained QAOA parameters across different COP instances, reducing classical optimization overhead significantly.},
+archivePrefix = {arXiv},
+arxivId = {2402.05549},
+author = {Montanez-Barrera, J. A. and Willsch, Dennis and Michielsen, Kristel},
+eprint = {2402.05549},
+journal = {Quantum Information Processing},
+title = {{Transfer learning of optimal QAOA parameters in combinatorial optimization}},
+url = {https://doi.org/10.1007/s11128-025-04743-4},
+doi = {10.1007/s11128-025-04743-4},
+volume = {24},
+pages = {129},
+year = {2025},
+keywords = {transfer learning,qaoa,combinatorial optimization},
+selected={true}
+}
+
+@article{Montanez-Barrera2025-Benchmarking,
+abstract = {In recent years, neutral atom-based quantum computation has been established as a competing alternative for fault-tolerant quantum computation. With processors continuing to scale up, new techniques are needed to characterize and compare them to track their progress.},
+archivePrefix = {arXiv},
+arxivId = {2511.22967},
+author = {Rava, Andrea B. and Michielsen, Kristel and Montanez-Barrera, J. A.},
+eprint = {2511.22967},
+title = {{Benchmarking neutral atom-based quantum processors at scale}},
+url = {http://arxiv.org/abs/2511.22967},
+year = {2025},
+keywords = {benchmarking,neutral atoms,quantum processors}
+}
+
+@article{Montanez-Barrera2025-QPU-Performance,
+abstract = {Quantum computers have now surpassed classical simulation limits, yet noise continues to limit their practical utility. As the field shifts from proof-of-principle demonstrations to early deployments, there is no standard method for meaningfully and scalably comparing heterogeneous quantum hardware.},
+archivePrefix = {arXiv},
+arxivId = {2502.06471},
+author = {Montanez-Barrera, J. A. and Michielsen, Kristel and Bernal Neira, David E.},
+eprint = {2502.06471},
+title = {{Evaluating the performance of quantum processing units at large width and depth}},
+url = {http://arxiv.org/abs/2502.06471},
+year = {2025},
+keywords = {benchmarking,quantum processors,performance evaluation}
+}
+
+@article{Montanez-Barrera2024-ZECS,
+abstract = {As quantum processing units (QPUs) scale toward hundreds of qubits, diagnosing noise-induced correlations (crosstalk) becomes critical. We introduce Zero-Entropy Classical Shadows (ZECS), a diagnostic tool using rank-one quantum state tomography reconstruction from classical shadow information to make crosstalk diagnostics.},
+archivePrefix = {arXiv},
+arxivId = {2408.17317},
+author = {Montañez-Barrera, J. A. and Beretta, G. P. and Michielsen, Kristel and von Spakovsky, Michael R.},
+eprint = {2408.17317},
+journal = {Quantum Science and Technology},
+title = {{Diagnosing crosstalk in large-scale QPUs using zero-entropy classical shadows}},
+url = {https://doi.org/10.1088/2058-9565/ae1e99},
+doi = {10.1088/2058-9565/ae1e99},
+volume = {11},
+number = {1},
+year = {2025},
+keywords = {crosstalk,classical shadows,quantum diagnostics}
+}
+
 @article{Montanez-Barrera2024,
 abstract = {The quantum approximate optimization algorithm (QAOA) is a promising algorithm for solving combinatorial optimization problems (COPs). In this algorithm, there are alternating layers consisting of a mixer and a problem Hamiltonian. Each layer $i=0,\ldots,p-1$ is parameterized by $\beta_i$ and $\gamma_i$. How to find these parameters has been an open question with the majority of the research focused on finding them using classical algorithms. In this work, we present evidence that fixed linear ramp schedules constitute a universal set of QAOA parameters, i.e., a set of $\gamma$ and $\beta$ parameters that rapidly approximate the optimal solution, $x^*$, independently of the COP selected, and that the success probability of finding it, $probability(x^*)$, increases with the number of QAOA layers $p$. We simulate linear ramp QAOA protocols (LR-QAOA) involving up to $N_q=42$ qubits and $p = 400$ layers on random instances of 9 different COPs. The results suggest that $probability(x^*) \approx 1/2^{(\eta N_q / p)}$ for a constant $\eta$. For example, when implementing LR-QAOA with $p=42$, the $probability(x^*)$ for 42-qubit Weighted MaxCut problems (W-MaxCut) increases from $2/2^{42}\approx 10^{-13}$ to an average of 0.13. We compare LR-QAOA, simulated annealing (SA), and branch-and-bound (B\&B) finding a fundamental improvement in LR-QAOA. We test LR-QAOA on real hardware using IonQ Aria, Quantinuum H2-1, IBM Brisbane, IBM Kyoto, and IBM Osaka, encoding random weighted MaxCut (W-MaxCut) problems from 5 to 109 qubits and $p=3$ to $100$. Even for the largest case, $N_q=109$ qubits and $p=100$, information about the LR-QAOA optimization protocol is present. The circuit involved requires 21200 CNOT gates. These results show that LR-QAOA effectively finds high-quality solutions for COPs and suggests an advantage of quantum computation for combinatorial optimization in the near future.},
 archivePrefix = {arXiv},

@@ -90,6 +90,15 @@
 - title: Honors and Awards
   type: time_table
   contents:
+    - year: 2025
+      items:
+        - IBM Quantum Developer Conference (QDC25) - Overall Challenge Winner (Track B)
+        - QDC25 Winner - Maximum Independent Set Problem challenge
+        - QDC25 Winner - Quantum Approximate Multi-Objective Optimization (QAMOO) challenge
+        - Team with Harshit Gupta, Pablo Viñas Martinez, and Daniel Sierra-Sosa
+    - year: 2024
+      items:
+        - IBM Quantum Developer Conference (QDC24) Winner
     - year: 2023
       items: 
         - Unitary Fund Grant for OpenQAOA development
