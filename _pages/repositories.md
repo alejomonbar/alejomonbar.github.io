@@ -2,7 +2,7 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Open source quantum computing projects and contributions.
+description: Open source quantum computing projects and contributions. Major contributor to OpenQAOA (137⭐), with specialized repositories for quantum optimization, supply chain management, and portfolio investment using quantum algorithms.
 nav: true
 nav_order: 4
 ---

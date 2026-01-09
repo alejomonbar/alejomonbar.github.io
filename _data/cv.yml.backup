@@ -26,17 +26,7 @@
         - Thesis on steepest-entropy-ascent quantum thermodynamics (SEAQT) framework
         - Modeled spin systems driven out of equilibrium by Hamiltonian quenching
         - Compared theoretical models with experimental measurements of entropy generation
-        
-    - title: B.Sc. in Electromechanical Engineering
-      institution: Pedagogical and Technological University of Colombia (UPTC)
-      year: 2010-2015
-      description:
-        - Foundation in classical engineering and computational methods
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Postdoctoral Researcher in Quantum Computing
+        Researcher in Quantum Computing
       institution: Institute for Advanced Simulation (IAS), Jülich Supercomputing Centre, Germany
       year: 2022 - Present
       description:
@@ -67,8 +57,13 @@
         - Added functionalities to the BasicAer backend (Mentor Kevin Sung)
         - Developed applications for Qiskit Optimization library and benchmarking tools (Mentor Takashi Imamichi)
         - Contributing member of IBM Quantum community
+      year: 2023
+      description:
+        - Develop the optimization problems structure of openQAOA a python-based library from Entropica Labs.
 
-- title: Open Source Contributions
+    - title: Mentorship in Quantum Computing
+      institution: IBM
+      year: 2021-2022Contributions
   type: time_table
   contents:
     - title: <a href="https://github.com/entropicalabs/openqaoa">OpenQAOA</a>
@@ -82,13 +77,7 @@
       description: Contributor to IBM's quantum computing framework
     - title: <a href="https://github.com/PennyLaneAI/pennylane">PennyLane</a>
       year: 2022
-      description: Contributions to quantum machine learning library
-    - title: D-Wave Ocean SDK
-      year: 2022
-      description: Quantum annealing tools and applications
-
-- title: Honors and Awards
-  type: time_table
+      detime_table
   contents:
     - year: 2023
       items: 
@@ -102,9 +91,7 @@
         - Quantum Counselor for Portfolio Investment - Quantum-based forecasting and optimization tool
     - year: 2021
       items:
-        - IBM Qiskit Advocate
-
-- title: Research Interests
+        -Research Interests
   type: nested_list
   contents:
     - title: Quantum Computing
@@ -123,37 +110,20 @@
         - Portfolio optimization
         - Logistics and scheduling
         - Graph problems (MaxCut, TSP, MIS)
+        - QHack winner. Quantum Computing Today and Amazon Braket challenges.
+        - Project | Enhancing Portfolio Optimization Solutions. Wisely Encoding Constrained Combinatorial Optimization Problems on Quantum Devices
 
-- title: Technical Skills
+- title: Academic Interests
   type: nested_list
   contents:
-    - title: Quantum Computing Frameworks
+    - title: Quantum Computing
+      items: 
+        - Simulation
+        - Benchmarking
+        - Applications in Optimization
+    - title: Thermodynamics
       items:
-        - Qiskit (IBM Quantum)
-        - PennyLane (Xanadu)
-        - D-Wave Ocean SDK
-        - OpenQAOA
-        - Cirq (Google)
-    - title: Programming Languages
-      items:
-        - Python (Expert)
-        - Julia
-        - C/C++
-        - Bash scripting
-    - title: HPC & Cloud Platforms
-      items:
-        - JURECA & JUWELS supercomputers
-        - IBM Quantum
-        - IonQ Aria & Harmony
-        - Rigetti Aspen
-        - Quantinuum H-series
-        - AWS Braket
-    - title: Tools & Libraries
-      items:
-        - NumPy, SciPy, Pandas
-        - Machine Learning (TensorFlow, PyTorch)
-        - Git, Docker
-        - LaTeX, Jupyter
+        - ANN for properties prediction
 
 - title: Other Interests
   type: list
