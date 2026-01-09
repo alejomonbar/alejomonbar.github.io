@@ -1,1 +1,0 @@
-Currently working on combinatorial optimization problem solutions on quantum computers and benchmarking variational quantum algorithms. Applying error mitigation techniques for noise reduction in noisy intermediate-scale quantum technology and noise simulation on quantum devices. Interested in applications of machine learning in thermodynamics.
