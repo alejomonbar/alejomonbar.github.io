@@ -2,6 +2,7 @@
 layout: about
 title: about
 permalink: /
+description: Alejandro Montanez-Barrera — quantum computing researcher at Jülich Supercomputing Centre (JSC) working on QAOA, quantum optimization, and quantum hardware benchmarking.
 subtitle: Institute for Advanced Simulation (IAS), Jülich Supercomputing Centre (JSC).
 
 profile:

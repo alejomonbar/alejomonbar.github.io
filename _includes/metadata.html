@@ -75,6 +75,56 @@
 
 {%- if site.serve_schema_org %}
 
+    {%- if page.permalink == '/' -%}
+    <!-- Schema.org (homepage Person entity) -->
+    {% assign sameaslinks = "" | split: "," %}
+    {%- if site.orcid_id -%}
+        {%- capture link -%}https://orcid.org/{{ site.orcid_id }}{%- endcapture -%}
+        {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
+    {%- if site.scholar_userid -%}
+        {%- capture link -%}https://scholar.google.com/citations?user={{ site.scholar_userid }}{%- endcapture -%}
+        {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
+    {%- if site.github_username -%}
+        {%- capture link -%}https://github.com/{{ site.github_username }}{%- endcapture -%}
+        {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
+    {%- if site.linkedin_username -%}
+        {%- capture link -%}https://www.linkedin.com/in/{{ site.linkedin_username }}{%- endcapture -%}
+        {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
+    {%- if site.research_gate_profile -%}
+        {%- capture link -%}https://www.researchgate.net/profile/{{site.research_gate_profile}}{%- endcapture -%}
+        {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
+    {%- if site.work_url -%}
+        {%- capture link -%}{{ site.work_url }}{%- endcapture -%}
+        {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
+    {%- if site.x_username -%}
+        {%- capture link -%}https://twitter.com/{{ site.x_username }}{%- endcapture -%}
+        {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
+    {%- if sameaslinks != blank -%}
+        {%- assign sameaslinks = sameaslinks | split: "" -%}
+    {%- endif -%}
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}",
+        "url": "{{ site.url | append: site.baseurl | append: '/' }}",
+        "image": "{{ '/assets/img/prof_pic.jpg' | absolute_url }}",
+        {% if sameaslinks != blank -%}
+        "sameAs": {{ sameaslinks }}
+        {%- endif %}
+    }
+    </script>
+
+    {%- else -%}
+
     <!-- Schema.org -->
     {%- comment -%} Social links generator for "sameAs schema" {%- endcomment %}
     {% assign sameaslinks = "" | split: "," %}
@@ -236,4 +286,6 @@
         "@context": "https://schema.org"
     }
     </script>
+    {%- endif %}
+
 {%- endif %}
