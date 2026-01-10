@@ -10,11 +10,11 @@ nav_order: 6
 ## Conference Presentations
 
 ### 2025
-- **AIChE Quantum Computing and Artificial Intelligence Applications Workshop**  
-  [AIChE QCAI Workshop 2025](https://www.aiche.org/conferences/quantum-computing-and-artificial-intelligence-applications-workshop/2025)
+- **Quantum ChemE 2025 (QChemE): Quantum Computing Applications in Chemical and Biochemical Engineering**  
+  [QChemE 2025](https://www.aiche.org/conferences/quantum-computing-and-artificial-intelligence-applications-workshop/2025)
 
 - **TQCI (Teratec Quantum Computing Initiatives) Seminar**  
-  June 2025 | [TQCI Seminar](https://teratec.eu/Seminaires/TQCI/2025/Seminaire_TQCI-250625_UK.html)
+  24--25 June 2025: seminar dedicated to benchmarks for quantum computers | [TQCI Seminar](https://teratec.eu/Seminaires/TQCI/2025/Seminaire_TQCI-250625_UK.html)
 
 - **Quantum Computing User Forum**  
   Oak Ridge Leadership Computing Facility (OLCF) | [QC User Forum](https://www.olcf.ornl.gov/calendar/2025-quantum-computing-user-forum/)
