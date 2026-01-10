@@ -37,6 +37,10 @@ nav_order: 6
 
 ## Workshops & Tutorials
 
+### 2024
+- **PennyLane QML Demo Tutorial: Quadratic Unconstrained Binary Optimization (QUBO)**  
+  Tutorial author | [tutorial_QUBO](https://pennylane.ai/qml/demos/tutorial_QUBO)
+
 ### Quantum Computing Mentorship
 - **IBM Qiskit Advocate Program** (2021-2022)  
   Mentored developers on Qiskit optimization applications
@@ -44,9 +48,20 @@ nav_order: 6
 - **OpenQAOA Community**  
   Contributing tutorials and examples for quantum optimization
 
+- **Qiskit Fall Fest**  
+  Main organizer / responsible for Qiskit Fall Fest in Colombia (2021, 2022, 2023) and Latin America (2023) | [Fall Fest Latino 2023](https://github.com/fall-fest-latino/escuela-de-computacion-cuantica-2023)
+
 ---
 
 ## Hackathons & Competitions
+
+### Quantum Future Academy 2025 (Quantum.Amsterdam)
+- **Hackathon director**  
+  23--30 August 2025 | [Quantum Future Academy 2025](https://www.quantum.amsterdam/events/quantum-future-academy-2025/)
+
+### Hackathon “Quantum Computational Science and Engineering” (RWTH Aachen University)
+- **Speaker + hackathon problem / use-case developer**  
+  24--26 November 2023 | [Quantum Hack](https://www.mbd.rwth-aachen.de/cms/mbd/der-lehrstuhl/aktuelle-meldungen/~bemaze/quantum-hack/?lidx=1)
 
 ### IBM Quantum Developer Conference (QDC) 2025
 - **Overall Challenge Winner** (Track B) - Team awarded by IBM VP of Quantum Algorithms Katie Pizzolato
