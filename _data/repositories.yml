@@ -2,10 +2,37 @@ github_users:
   - alejomonbar
 
 github_repos:
-  - alejomonbar/LR-QAOA
-  - alejomonbar/Quantum-Powered-Planner-For-EV-Charging-Networks
-  - alejomonbar/clever-portfolio-optimization-encoding
-  - alejomonbar/Quantum-Counselor-for-Portfolio-Investment
-  - alejomonbar/Quantum-Supply-Chain-Manager
-  - alejomonbar/Generating-randomly-perturbed-density-operators
-  - entropicalabs/openqaoa
+  - repo: alejomonbar/LR-QAOA
+    title: LR-QAOA
+    description: Linear-Ramp QAOA protocol for quantum optimization and benchmarking across problem families and hardware.
+    tags: [QAOA, optimization, benchmarking]
+
+  - repo: entropicalabs/openqaoa
+    title: OpenQAOA
+    description: Open-source SDK for QAOA research and applications.
+    tags: [open-source, QAOA, SDK]
+
+  - repo: alejomonbar/Quantum-Powered-Planner-For-EV-Charging-Networks
+    title: Quantum EV Charging Planner
+    description: Optimization workflows for planning EV charging infrastructure with quantum-inspired/quantum methods.
+    tags: [optimization, energy]
+
+  - repo: alejomonbar/Quantum-Supply-Chain-Manager
+    title: Quantum Supply Chain Manager
+    description: Combinatorial optimization formulations and experiments for supply chain problems.
+    tags: [optimization, supply-chain]
+
+  - repo: alejomonbar/Quantum-Counselor-for-Portfolio-Investment
+    title: Quantum Portfolio Counselor
+    description: Portfolio optimization formulations and experiments using quantum optimization methods.
+    tags: [optimization, finance]
+
+  - repo: alejomonbar/clever-portfolio-optimization-encoding
+    title: Portfolio Encoding (QUBO)
+    description: Compact encodings and utilities for portfolio optimization problems.
+    tags: [QUBO, optimization, finance]
+
+  - repo: alejomonbar/Generating-randomly-perturbed-density-operators
+    title: Perturbed Density Operators
+    description: Tools and experiments for generating randomly perturbed density operators under constraints.
+    tags: [quantum-states, simulation]

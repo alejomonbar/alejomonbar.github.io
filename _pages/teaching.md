@@ -10,11 +10,17 @@ nav_order: 6
 ## Conference Presentations
 
 ### 2025
-- **Quantum Optimization Benchmarking Library** - IEEE Quantum Week (Contributor)
-- **Benchmarking Neutral Atom QPUs at Scale** - Research presentation
+- **AIChE Quantum Computing and Artificial Intelligence Applications Workshop**  
+  [AIChE QCAI Workshop 2025](https://www.aiche.org/conferences/quantum-computing-and-artificial-intelligence-applications-workshop/2025)
 
-### 2024
-- **Linear-Ramp QAOA: Evidence of Quantum Advantage** - Research presentation on LR-QAOA protocol
+- **TQCI (Teratec Quantum Computing Initiatives) Seminar**  
+  June 2025 | [TQCI Seminar](https://teratec.eu/Seminaires/TQCI/2025/Seminaire_TQCI-250625_UK.html)
+
+- **Quantum Computing User Forum**  
+  Oak Ridge Leadership Computing Facility (OLCF) | [QC User Forum](https://www.olcf.ornl.gov/calendar/2025-quantum-computing-user-forum/)
+
+- **Assessing Performance of Quantum Computers (APQC)**  
+  Sandia National Laboratories | [APQC](https://qpl.sandia.gov/events/apqc/apqc-agenda/)
 
 ### 2023
 - **IEEE International Conference on Quantum Computing and Engineering (QCE)**  
