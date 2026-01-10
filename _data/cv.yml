@@ -41,9 +41,9 @@
       year: 2022 - Present
       description:
         - Solving combinatorial optimization problems using digital and analog quantum computing approaches
-        - Simulating large quantum circuits (up to 109 qubits) on HPC systems (JURECA, JUWELS)
+        - Simulating quantum circuits (up to 43 qubits) on HPC systems (JURECA, JUWELS)
         - Cross-platform benchmarking of quantum devices (neutral atoms, superconducting, trapped-ion)
-        - Developing and testing quantum algorithms on real quantum hardware (IBM, IonQ, Rigetti, D-Wave, Quantinuum)
+        - Developing and testing quantum algorithms on real quantum hardware (IBM, IonQ, Rigetti, D-Wave, Quantinuum), including experiments up to 109 qubits and benchmarking up to 156 qubits
         - Characterization of large quantum systems using classical shadows and error mitigation
         - title: Key Contributions
           contents:

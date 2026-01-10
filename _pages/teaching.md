@@ -29,17 +29,19 @@ nav_order: 6
 
 ---
 
-## Invited Talks & Seminars
-
-*Coming soon - information about invited seminars and research group presentations*
-
----
-
 ## Workshops & Tutorials
+
+### 2024
+- **Spring/Summer School on Quantum Computing (Forschungszentrum Jülich, QIP group)**  
+  Invited lectures on QAOA, QPU evolution, and optimization; prepared two teaching notebooks: (i) quantum adiabatic algorithm for neutral atoms, (ii) QAOA for gate-based devices, including implementations on real hardware.
 
 ### 2024
 - **PennyLane QML Demo Tutorial: Quadratic Unconstrained Binary Optimization (QUBO)**  
   Tutorial author | [tutorial_QUBO](https://pennylane.ai/qml/demos/tutorial_QUBO)
+
+### 2023
+- **Spring/Summer School on Quantum Computing (Forschungszentrum Jülich, QIP group)**  
+  Two lectures on QAOA, QPU evolution, and optimization.
 
 ### Quantum Computing Mentorship
 - **IBM Qiskit Advocate Program** (2021-2022)  

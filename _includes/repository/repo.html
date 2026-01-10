@@ -5,11 +5,13 @@
   {% assign repo_title = repo_obj.title | default: repo_full %}
   {% assign repo_desc = repo_obj.description %}
   {% assign repo_tags = repo_obj.tags %}
+  {% assign repo_stars = repo_obj.stars %}
 {% else %}
   {% assign repo_full = include.repository %}
   {% assign repo_title = repo_full | split: '/' | last %}
   {% assign repo_desc = nil %}
   {% assign repo_tags = nil %}
+  {% assign repo_stars = nil %}
 {% endif %}
 
 {% assign repo_url = repo_full | split: '/' %}
@@ -22,8 +24,11 @@
 <div class="repo p-2">
   <div class="card h-100 bg-transparent">
     <div class="card-body">
-      <h5 class="card-title mb-1">
+      <h5 class="card-title mb-1 d-flex align-items-center justify-content-between">
         <a href="https://github.com/{{ repo_full }}">{{ repo_title }}</a>
+        <span class="repo-stars small text-muted" data-repo="{{ repo_full }}" {% if repo_stars %}data-stars="{{ repo_stars }}"{% endif %}>
+          <span class="repo-stars-text"></span>
+        </span>
       </h5>
 
       {% if show_owner %}

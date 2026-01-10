@@ -7,32 +7,52 @@ github_repos:
     description: Linear-Ramp QAOA protocol for quantum optimization and benchmarking across problem families and hardware.
     tags: [QAOA, optimization, benchmarking]
 
+  - repo: alejomonbar/LR-QAOA-QPU-Benchmarking
+    title: LR-QAOA QPU Benchmarking
+    description: Cross-platform benchmark suite for gate-based QPUs (multi-vendor) using LR-QAOA and related protocols.
+    tags: [benchmarking, QAOA, QPU]
+
+  - repo: alejomonbar/Benchmarking-neutral-atom-QPUs
+    title: Benchmarking Neutral-Atom QPUs
+    description: Benchmarking workflows and experiments for neutral-atom quantum processors.
+    tags: [benchmarking, neutral-atoms]
+
+  - repo: alejomonbar/Zero-Entropy-Classical-Shadow-for-quantum-state-tomography
+    title: Zero-Entropy Classical Shadows
+    description: Zero-entropy classical-shadow reconstruction for quantum state tomography (with analysis utilities).
+    tags: [classical-shadows, tomography, error-mitigation]
+
+  - repo: alejomonbar/qaoa_training_pipeline
+    title: QAOA Training Pipeline
+    description: Pipeline and methods to generate strong parameters for QAOA ansatz circuits.
+    tags: [QAOA, parameter-learning, pipeline]
+
   - repo: entropicalabs/openqaoa
     title: OpenQAOA
-    description: Open-source SDK for QAOA research and applications.
-    tags: [open-source, QAOA, SDK]
+    description: Open-source SDK for QAOA research and applications (maintainer/contributor).
+    tags: [open-source, QAOA, SDK, maintainer]
 
-  - repo: alejomonbar/Quantum-Powered-Planner-For-EV-Charging-Networks
-    title: Quantum EV Charging Planner
-    description: Optimization workflows for planning EV charging infrastructure with quantum-inspired/quantum methods.
-    tags: [optimization, energy]
+  - repo: alejomonbar/quantum-portfolio-optimization-encoding
+    title: Portfolio Optimization Encoding
+    description: QUBO encodings and utilities for portfolio optimization.
+    tags: [QUBO, optimization, finance]
 
   - repo: alejomonbar/Quantum-Supply-Chain-Manager
     title: Quantum Supply Chain Manager
     description: Combinatorial optimization formulations and experiments for supply chain problems.
     tags: [optimization, supply-chain]
 
-  - repo: alejomonbar/Quantum-Counselor-for-Portfolio-Investment
-    title: Quantum Portfolio Counselor
-    description: Portfolio optimization formulations and experiments using quantum optimization methods.
-    tags: [optimization, finance]
+  - repo: PennyLaneAI/qml
+    title: PennyLane QML Demos
+    description: Contributor/author of the QUBO optimization demo tutorial.
+    tags: [PennyLane, tutorial, QUBO]
 
-  - repo: alejomonbar/clever-portfolio-optimization-encoding
-    title: Portfolio Encoding (QUBO)
-    description: Compact encodings and utilities for portfolio optimization problems.
-    tags: [QUBO, optimization, finance]
+  - repo: fall-fest-latino/escuela-de-computacion-cuantica-2023
+    title: Qiskit Fall Fest Latino 2023
+    description: Main organizer/responsible for the Fall Fest program in Latin America (2023).
+    tags: [community, education, organizer]
 
-  - repo: alejomonbar/Generating-randomly-perturbed-density-operators
-    title: Perturbed Density Operators
-    description: Tools and experiments for generating randomly perturbed density operators under constraints.
-    tags: [quantum-states, simulation]
+  - repo: Qiskit/qiskit
+    title: Qiskit
+    description: Open-source quantum SDK (contributor).
+    tags: [Qiskit, open-source, contributor]
