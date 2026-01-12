@@ -136,6 +136,11 @@
         <div class="periodical">
           {{ entry.note | strip }}
         </div>
+        {%- if entry.citations -%}
+        <div class="periodical">
+          Citations: {{ entry.citations }}
+        </div>
+        {%- endif -%}
 
           <!-- Links/Buttons -->
           <div class="links">
