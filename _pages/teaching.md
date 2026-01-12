@@ -11,15 +11,19 @@ nav_order: 6
 
 ### 2025
 - **Quantum ChemE 2025 (QChemE): Quantum Computing Applications in Chemical and Biochemical Engineering**  
+  *Evaluating the performance of quantum processing units (QPUs) at large width and depth*  
   [QChemE 2025](https://www.aiche.org/conferences/quantum-computing-and-artificial-intelligence-applications-workshop/2025)
 
 - **TQCI (Teratec Quantum Computing Initiatives) Seminar**  
+  *Evaluating the performance of quantum processing units (QPUs) at large width and depth*  
   24--25 June 2025: seminar dedicated to benchmarks for quantum computers | [TQCI Seminar](https://teratec.eu/Seminaires/TQCI/2025/Seminaire_TQCI-250625_UK.html)
 
 - **Quantum Computing User Forum**  
+  *Evaluating the performance of quantum processing units (QPUs) at large width and depth*  
   Oak Ridge Leadership Computing Facility (OLCF) | [QC User Forum](https://www.olcf.ornl.gov/calendar/2025-quantum-computing-user-forum/)
 
 - **Assessing Performance of Quantum Computers (APQC)**  
+  *Evaluating the performance of quantum processing units (QPUs) at large width and depth*  
   Sandia National Laboratories | [APQC](https://qpl.sandia.gov/events/apqc/apqc-agenda/)
 
 ### 2023
@@ -30,6 +34,11 @@ nav_order: 6
 ---
 
 ## Workshops & Tutorials
+
+### 2025
+- **Use Cases Workshop 2025 (eleQtron & Jülich Supercomputing Centre)**  
+  *Optimization Problems: Going from Abstract to Applications*  
+  01--02 October 2025 | Siegen | [Workshop page](https://eleqtron.com/en/joint-workshop-2025/)
 
 ### 2024
 - **Spring/Summer School on Quantum Computing (Forschungszentrum Jülich, QIP group)**  

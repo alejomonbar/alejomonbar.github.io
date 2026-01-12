@@ -32,6 +32,11 @@
       year: 2010-2015
       description:
         - Foundation in classical engineering and computational methods
+        - >-
+          Research project: teleoperation of an AL5A robotic arm for remote manipulation
+          (control, real-time communication, and experimental validation); published as
+          <a href="https://www.scielo.org.co/scielo.php?pid=S1692-82612017000100053&script=sci_abstract&tlng=en">"Analysis of elements in local area and remote for teleoperation of AL5A robotic arm"</a>
+          (Prospectiva, 2017)
 
 - title: Experience
   type: time_table
@@ -47,18 +52,23 @@
         - Characterization of large quantum systems using classical shadows and error mitigation
         - title: Key Contributions
           contents:
-            - Discovered universal linear ramp QAOA parameters for combinatorial optimization
+            - Developed the LR-QAOA protocol and tooling for scalable benchmarking of combinatorial optimization across QPUs
             - Developed transfer learning methodology for QAOA reducing classical optimization overhead
             - Created unbalanced penalization technique for better encoding of inequality-constrained problems
             - Published high-impact research on QAOA parameter optimization
             
     - title: OpenQAOA SDK Maintainer
       institution: Unitary Fund Grant Recipient
-      year: 2023
+      year: 2022-2024
       description:
-        - Developed optimization problems structure for OpenQAOA Python library (Entropica Labs)
-        - Contributed to open-source quantum optimization software
-        - Improved accessibility of QAOA for researchers and practitioners
+        - Maintained and extended OpenQAOA's optimization problems library to simplify benchmarking of QAOA across problem classes
+        - >-
+          Delivered core features and problem implementations via upstream PRs (e.g.,
+          From Docplex to Ising Model / QUBO: https://github.com/entropicalabs/openqaoa/pull/71;
+          MIS: https://github.com/entropicalabs/openqaoa/pull/208;
+          Portfolio Optimization: https://github.com/entropicalabs/openqaoa/pull/216;
+          VRP: https://github.com/entropicalabs/openqaoa/pull/224)
+        - Supported by a Unitary Fund grant (Q1 2023): https://unitary.foundation/posts/2023_q1/
 
     - title: Qiskit Advocate & Mentor
       institution: IBM Quantum
@@ -72,8 +82,11 @@
   type: time_table
   contents:
     - title: <a href="https://github.com/entropicalabs/openqaoa">OpenQAOA</a>
-      year: 2023-Present
+      year: 2022-2024
       description: SDK maintainer - Quantum optimization library by Entropica Labs
+    - title: <a href="https://github.com/unitaryfoundation/metriq-gym">Metriq-Gym</a>
+      year: 2025
+      description: Added an LR-QAOA benchmarking protocol for collecting and publishing QPU benchmarks
     - title: <a href="https://github.com/alejomonbar/LR-QAOA">LR-QAOA</a>
       year: 2024
       description: Linear ramp QAOA implementation and research code
@@ -96,12 +109,13 @@
         - QDC25 Winner - Maximum Independent Set Problem challenge
         - QDC25 Winner - Quantum Approximate Multi-Objective Optimization (QAMOO) challenge
         - Team with Harshit Gupta, Pablo Viñas Martinez, and Daniel Sierra-Sosa
+        - Unitary Fund Grant to further develop and test LR-QAOA quantum benchmarking (https://unitary.foundation/posts/2025_q1/)
     - year: 2024
       items:
         - IBM Quantum Developer Conference (QDC24) Winner
     - year: 2023
       items: 
-        - Unitary Fund Grant for OpenQAOA development
+        - Unitary Fund Grant to simplify benchmarking of optimization problems in OpenQAOA (https://unitary.foundation/posts/2023_q1/)
         - QHack 2023 Winner - Quantum Computing Today and Amazon Braket challenges
         - Project Enhancing Portfolio Optimization Solutions - Advanced encoding of constrained optimization problems
     - year: 2022
