@@ -117,12 +117,12 @@
       items: 
         - Unitary Fund Grant to simplify benchmarking of optimization problems in OpenQAOA (https://unitary.foundation/posts/2023_q1/)
         - QHack 2023 Winner - Quantum Computing Today and Amazon Braket challenges
-        - Project Enhancing Portfolio Optimization Solutions - Advanced encoding of constrained optimization problems
+        - Project Enhancing Portfolio Optimization Solutions - Advanced encoding of constrained optimization problems (https://github.com/alejomonbar/quantum-portfolio-optimization-encoding)
     - year: 2022
       items: 
         - Ph.D. Summa cum laude - University of Guanajuato
         - QHack 2022 Winner - Financial, QAOA, and Entrepreneur challenges
-        - Quantum Counselor for Portfolio Investment - Quantum-based forecasting and optimization tool
+        - Quantum Counselor for Portfolio Investment - Quantum-based forecasting and optimization tool (https://github.com/alejomonbar/Quantum-Counselor-for-Portfolio-Investment)
     - year: 2021
       items:
         - IBM Qiskit Advocate

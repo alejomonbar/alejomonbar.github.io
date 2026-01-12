@@ -92,13 +92,13 @@ nav_order: 6
 ### QHack 2023
 - **Winner**: Quantum Computing Today Challenge
 - **Winner**: Amazon Braket Challenge
-- Project: Enhancing Portfolio Optimization Solutions
+- Project: Enhancing Portfolio Optimization Solutions | https://github.com/alejomonbar/quantum-portfolio-optimization-encoding
 
 ### QHack 2022
 - **Winner**: Financial Challenge
 - **Winner**: QAOA Challenge  
 - **Winner**: Entrepreneur Challenge
-- Project: Quantum Counselor for Portfolio Investment
+- Project: Quantum Counselor for Portfolio Investment | https://github.com/alejomonbar/Quantum-Counselor-for-Portfolio-Investment
 
 ---
 
