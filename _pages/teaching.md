@@ -26,6 +26,10 @@ nav_order: 6
   *Evaluating the performance of quantum processing units (QPUs) at large width and depth*  
   Sandia National Laboratories | [APQC](https://qpl.sandia.gov/events/apqc/apqc-agenda/)
 
+- **III Congreso internacional y VI Nacional de Ingeniería Electromecánica (UPTC)** *(Keynote speaker)*  
+  *A Journey from electromechanical engineering to quantum computing*  
+  29--31 October 2025 | Paipa, Boyacá, Colombia | [Event page](https://www.uptc.edu.co/sitio/portal/sitios/eve_mac/2025/25_10_evmacr_002/index.html)
+
 ### 2023
 - **IEEE International Conference on Quantum Computing and Engineering (QCE)**  
   *Improving Performance in Combinatorial Optimization Problems with Inequality Constraints*  
