@@ -13,7 +13,8 @@ from typing import Iterable, Optional, Tuple
 
 BIB_PATH = "_bibliography/papers.bib"
 OPENALEX_WORKS_ENDPOINT = "https://api.openalex.org/works/"
-USER_AGENT = "alejomonbar.github.io citation updater (OpenAlex)"
+SEMANTIC_SCHOLAR_ENDPOINT = "https://api.semanticscholar.org/graph/v1/paper/"
+USER_AGENT = "alejomonbar.github.io citation updater (Semantic Scholar + OpenAlex)"
 OPENALEX_MAILTO_ENV = "OPENALEX_MAILTO"
 
 
@@ -98,7 +99,38 @@ def _openalex_work_url(ids: Identifiers) -> Optional[str]:
     return None
 
 
-def _fetch_citations_count(ids: Identifiers) -> Optional[int]:
+def _fetch_citations_semantic_scholar(ids: Identifiers) -> Optional[int]:
+    """Try Semantic Scholar first (often closer to Google Scholar)."""
+    if not ids.doi and not ids.arxiv:
+        return None
+    
+    # Build Semantic Scholar URL
+    if ids.doi:
+        identifier = "DOI:" + ids.doi
+    elif ids.arxiv:
+        identifier = "ARXIV:" + ids.arxiv
+    else:
+        return None
+    
+    url = SEMANTIC_SCHOLAR_ENDPOINT + urllib.parse.quote(identifier, safe="") + "?fields=citationCount"
+    
+    try:
+        payload = _http_get_json(url)
+        count = payload.get("citationCount")
+        if isinstance(count, int):
+            return count
+    except urllib.error.HTTPError as e:
+        if e.code in (404, 422):
+            return None
+        # For other errors, fall through to OpenAlex
+    except urllib.error.URLError:
+        pass
+    
+    return None
+
+
+def _fetch_citations_openalex(ids: Identifiers) -> Optional[int]:
+    """Fall back to OpenAlex if Semantic Scholar doesn't have it."""
     url = _openalex_work_url(ids)
     if not url:
         return None
@@ -116,6 +148,17 @@ def _fetch_citations_count(ids: Identifiers) -> Optional[int]:
     if isinstance(count, int):
         return count
     return None
+
+
+def _fetch_citations_count(ids: Identifiers) -> Optional[int]:
+    """Try Semantic Scholar first, then OpenAlex."""
+    # Try Semantic Scholar (often closer to Google Scholar counts)
+    count = _fetch_citations_semantic_scholar(ids)
+    if count is not None:
+        return count
+    
+    # Fall back to OpenAlex
+    return _fetch_citations_openalex(ids)
 
 
 def _split_front_matter(text: str) -> Tuple[str, str]:
@@ -211,6 +254,7 @@ def main() -> int:
         open(path, "w", encoding="utf-8").write(new_raw)
 
     print(f"Updated citations for {updated} entries; unresolved={unresolved}; skipped={skipped}")
+    print(f"Citation sources: Semantic Scholar (primary) + OpenAlex (fallback)")
     return 0
 
 
