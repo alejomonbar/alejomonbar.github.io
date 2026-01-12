@@ -115,8 +115,16 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}",
+        "givenName": "{{ site.first_name }}",
+        {%- if site.middle_name and site.middle_name != blank -%}
+        "additionalName": "{{ site.middle_name }}",
+        {%- endif -%}
+        "familyName": "{{ site.last_name }}",
         "url": "{{ site.url | append: site.baseurl | append: '/' }}",
         "image": "{{ '/assets/img/prof_pic.jpg' | absolute_url }}",
+        {%- if site.alternate_names and site.alternate_names != blank -%}
+        "alternateName": {{ site.alternate_names | jsonify }},
+        {%- endif -%}
         {% if sameaslinks != blank -%}
         "sameAs": {{ sameaslinks }}
         {%- endif %}

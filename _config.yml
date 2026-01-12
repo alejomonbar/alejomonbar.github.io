@@ -6,6 +6,10 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Alejandro
 middle_name: 
 last_name: Montanez-Barrera
+alternate_names:
+  - Jhon Alejandro Montanez Barrera
+  - J. A. Montanez Barrera
+  - J. A. Montañez-Barrera
 email: alejandro.montanezbarrera@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Alejandro Montanez-Barrera — Postdoctoral researcher at Jülich Supercomputing Centre specializing in quantum optimization, QAOA algorithms, and quantum hardware benchmarking. OpenQAOA maintainer and Qiskit Advocate with 16+ publications in quantum computing.
@@ -70,7 +74,7 @@ x_username: alejomonbar # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: alejandromontanez # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: citations?user=6ZUJtZMAAAAJ&hl=en # your Google Scholar ID
+scholar_userid: 6ZUJtZMAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: 0000-0002-8103-4581 # your ORCID ID

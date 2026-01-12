@@ -24,6 +24,8 @@ social: true  # includes social icons at the bottom of the page
 
 I am a postdoctoral researcher at the [Jülich Supercomputing Centre (JSC)](https://www.fz-juelich.de/en/ias/jsc) in Germany, working at the interface of quantum computing and high-performance computing. My research focuses on scalable methods for quantum optimization and quantum hardware benchmarking—especially protocols that reduce classical tuning overhead and enable fair cross-platform comparisons.
 
+My name also appears as **Jhon Alejandro Montanez Barrera** and **J. A. Montanez Barrera** (also written **J. A. Montañez-Barrera**).
+
 **Highlights**
 - **LR-QAOA** validated on multiple platforms, including experiments up to **109 qubits** (*npj Quantum Information*).
 - **Gate-based benchmarking at scale**: evaluated **28 QPUs from 6 vendors**, extending large-width analysis up to **156 qubits** (among the most extensive cross-platform studies I’m aware of).
