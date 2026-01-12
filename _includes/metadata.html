@@ -291,6 +291,9 @@
         "sameAs": {{ sameaslinks }},
         {%- endif %}
         "name": "{{ site.first_name }} {{ site.middle_name }} {{ site.last_name }}",
+        {%- if site.alternate_names and site.alternate_names != blank -%}
+        "alternateName": {{ site.alternate_names | jsonify }},
+        {%- endif -%}
         "@context": "https://schema.org"
     }
     </script>
