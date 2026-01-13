@@ -91,7 +91,7 @@ nav_order: 6
 
 ### QHack 2023
 - **Winner**: Quantum Computing Today Challenge
-- **Winner**: Amazon Braket Challenge
+- **Winner**: [Amazon Braket Challenge](https://aws.amazon.com/blogs/quantum-computing/announcing-the-amazon-braket-challenge-winners-of-the-qhack-2023-hackathon/)
 - **Project**: [Enhancing Portfolio Optimization Solutions](https://github.com/alejomonbar/quantum-portfolio-optimization-encoding)
 
 ### QHack 2022
