@@ -25,6 +25,7 @@ class Identifiers:
 
 
 def _http_get_json(url: str, timeout_s: int = 30) -> dict:
+    import ssl
     req = urllib.request.Request(
         url,
         headers={
@@ -33,9 +34,20 @@ def _http_get_json(url: str, timeout_s: int = 30) -> dict:
         },
         method="GET",
     )
-    with urllib.request.urlopen(req, timeout=timeout_s) as resp:
-        data = resp.read().decode("utf-8")
-        return json.loads(data)
+    # SSL context - try default, fall back to unverified for local testing
+    try:
+        ctx = ssl.create_default_context()
+        with urllib.request.urlopen(req, timeout=timeout_s, context=ctx) as resp:
+            data = resp.read().decode("utf-8")
+            return json.loads(data)
+    except ssl.SSLError:
+        # Fall back to unverified context (local testing only)
+        ctx = ssl.create_default_context()
+        ctx.check_hostname = False
+        ctx.verify_mode = ssl.CERT_NONE
+        with urllib.request.urlopen(req, timeout=timeout_s, context=ctx) as resp:
+            data = resp.read().decode("utf-8")
+            return json.loads(data)
 
 
 def _normalize_doi(raw: str) -> str:
@@ -119,11 +131,8 @@ def _fetch_citations_semantic_scholar(ids: Identifiers) -> Optional[int]:
         count = payload.get("citationCount")
         if isinstance(count, int):
             return count
-    except urllib.error.HTTPError as e:
-        if e.code in (404, 422):
-            return None
-        # For other errors, fall through to OpenAlex
-    except urllib.error.URLError:
+    except (urllib.error.HTTPError, urllib.error.URLError, Exception) as e:
+        # Any error, try OpenAlex instead
         pass
     
     return None
@@ -136,17 +145,11 @@ def _fetch_citations_openalex(ids: Identifiers) -> Optional[int]:
         return None
     try:
         payload = _http_get_json(url)
-    except urllib.error.HTTPError as e:
-        # 404 when OpenAlex can't resolve the identifier.
-        if e.code in (404, 422):
-            return None
-        raise
-    except urllib.error.URLError:
-        return None
-
-    count = payload.get("cited_by_count")
-    if isinstance(count, int):
-        return count
+        count = payload.get("cited_by_count")
+        if isinstance(count, int):
+            return count
+    except (urllib.error.HTTPError, urllib.error.URLError, Exception):
+        pass
     return None
 
 
