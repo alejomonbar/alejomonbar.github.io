@@ -95,10 +95,10 @@ nav_order: 6
 - **Project**: [Enhancing Portfolio Optimization Solutions](https://github.com/alejomonbar/quantum-portfolio-optimization-encoding)
 
 ### QHack 2022
-- **Winner**: Financial Challenge
-- **Winner**: QAOA Challenge  
-- **Winner**: Entrepreneur Challenge
-- Project: Quantum Counselor for Portfolio Investment | https://github.com/alejomonbar/Quantum-Counselor-for-Portfolio-Investment
+- **Winner**: [Financial Challenge](https://medium.com/xanaduai/qhack-2022-cb5ad92573e2)
+- **Winner**: [QAOA Challenge](https://medium.com/xanaduai/qhack-2022-cb5ad92573e2)
+- **Winner**: [Entrepreneur Challenge](https://medium.com/xanaduai/qhack-2022-cb5ad92573e2)
+- **Project**: [Quantum Counselor for Portfolio Investment](https://github.com/alejomonbar/Quantum-Counselor-for-Portfolio-Investment)
 
 ---
 
